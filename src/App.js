@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from './components/ui/Header'
 import CharacterGrid from './components/characters/CharacterGrid'
 import Search from './components/ui/Search'
+import Footer from './components/ui/Footer'
 import './App.css';
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
       <Header />
       <Search getQuery={(query) => setQuery(query)} />
       <CharacterGrid isLoading={isLoading} items={items} />
+      <Footer />
     </div>
   );
 }
